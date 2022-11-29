@@ -1,0 +1,203 @@
+﻿<Window x:Class="WPFGalery.SecondPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFGalery"
+        mc:Ignorable="d"
+        Title="SecondPage"
+        Height="450"
+        Width="800">
+    <Grid Background="LightGreen">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1.5*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Menu Height="20"
+                  VerticalAlignment="Top"
+                  Grid.Row="0"
+                  Background="SkyBlue">
+                <MenuItem Header="File">
+                    <MenuItem Header="New">
+
+                    </MenuItem>
+                    <MenuItem Header="Open">
+
+                    </MenuItem>
+                    <MenuItem Header="Save">
+
+                    </MenuItem>
+                    <MenuItem Header="Save As">
+
+                    </MenuItem>
+                    <MenuItem Header="Exit">
+
+                    </MenuItem>
+
+                </MenuItem>
+                <MenuItem Header="Edit">
+                    <MenuItem Header="Add File"></MenuItem>
+                    <MenuItem Header="Add Folder"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="View">
+                    <MenuItem Header="Medium"
+                              Click="MenuItem_Click_1"></MenuItem>
+                    <MenuItem Header="Small Icons"
+                              Click="MenuItem_Click"></MenuItem>
+                    <MenuItem Header="Large"
+                              Click="MenuItem_Click_2"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="About" Click='MenuItem_Click_3'>
+
+                </MenuItem>
+
+
+            </Menu>
+        </Grid>
+        <Grid Grid.Row="1" Background="LawnGreen">
+            <Button Background="LawnGreen"
+                    Width="60"
+                    Height="60"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Click="Button_Click1"
+                    BorderThickness="0">
+                <Image Width="50"
+                       Height="50"
+                       Source="Image/back.png">
+                    
+                </Image>
+                
+            </Button>
+
+            <Image x:Name="MainImage"
+                   Width="{DynamicResource ButtonFS}"
+                   Height="{DynamicResource ButtonFS}"/>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <StackPanel>
+                        <TextBlock Background="White"
+                            Margin="10"
+                                   Height="30"
+                                   Width="200"
+                                   Name="nametextblock"/>
+                        
+                        <TextBlock Background="White"
+                                   Height="30"
+                                   Width="200"
+                                   Name="Pricetextblock"/>
+                        
+                        <TextBlock Background="White"
+                            Margin="10"
+                                   Height="30"
+                                   Width="200"
+                                   Name="DateTextblock"/>
+                        
+                    </StackPanel>
+                </Grid>
+                <StackPanel Orientation="Vertical">
+                    <Label 
+                        Content="Name :"
+                        Margin="5"
+                        FontFamily="Georgia"
+                        x:Name="namelbl"
+                        FontSize="20"/>
+
+                    <Label 
+                        Content="Price :"
+                        Margin="5"
+                        FontFamily="Georgia"
+                        x:Name="Price1lbl"
+                        FontSize="20"/>
+
+                    <Label 
+                        Content="Date :"
+                        Margin="4"
+                        FontFamily="Georgia"
+                        x:Name="Datelbl"
+                        FontSize="20"/>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <StackPanel>
+                        <TextBlock Margin="10"
+                                   Background="White"
+                                   Height="30"
+                                   Width="200"
+                                   Name="NationalityBlok"/>
+
+                        <TextBlock 
+                                   Background="White"
+                                   Height="30"
+                                   Width="200"
+                                   Name="DescriptiontextBlok"/>
+                    </StackPanel>
+                </Grid>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Nationality :"
+                           x:Name="Nationalitylbl"
+                           FontFamily="Georgia"
+                           FontSize="20"
+                           Margin="5"/>
+
+                    <Label Content="Description :"
+                           x:Name="Descriptionlbl"
+                           FontFamily="Georgia"
+                           FontSize="20"
+                           Margin="5"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="3">
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="PrevBtn"
+                        Margin="150,5,0,5"
+                        Content="Prev"
+                        Width="100"
+                        Style="{StaticResource GreenButton}"
+                        Click="PrevBtn_Click"/>
+
+                <Button x:Name="PauseBtn"
+                        Margin="20,5,0,5"
+                        Content="Pause"
+                        Width="100"
+                        Style="{StaticResource  GreenButton}"
+                        Click="PauseBtn_Click"/>
+
+                <Button x:Name="autoplayCeBtn" Style="{StaticResource AutoPlay}"
+                        Margin="20,5,0,5"
+                        Content="autoPlay"
+                        Width="140" Click="autoplayCeBtn_Click"/>
+
+                <Button x:Name="nextBtn"
+                        Margin="20,5,0,5"
+                        Content="Next"
+                        Width="100"
+                        Style="{StaticResource GreenButton}" Click="nextBtn_Click"/>
+
+
+
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
