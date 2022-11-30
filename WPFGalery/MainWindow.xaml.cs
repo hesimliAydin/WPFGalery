@@ -33,7 +33,7 @@ namespace WPFGalery
                 new Images
                 {
                     Name="Cristiano Ronaldo",
-                    ImagePath="Image/ronaldo.jpg",
+                    ImagePath="../../../Image/ronaldo.jpg",
                     Nationality="Portugal",
                     Price="500000000$",
                     Date=new DateTime(1985,05,05),
@@ -42,7 +42,7 @@ namespace WPFGalery
                 new Images
                 {
                     Name="Lionel Messi",
-                    ImagePath="Image/messi.jpg",
+                    ImagePath="../../../Image/messi.jpg",
                     Nationality="Argentina",
                     Price="470000000$",
                     Date=new DateTime(1987,09,22),
@@ -51,7 +51,7 @@ namespace WPFGalery
                 new Images
                 {
                     Name="Fernando Maradona",
-                    ImagePath="Image/maradona.jpg",
+                    ImagePath="../../../Image/maradona.jpg",
                     Nationality="Argentina",
                     Price="3800000000$",
                     Date=new DateTime(1992,05,05),
@@ -60,7 +60,7 @@ namespace WPFGalery
                 new Images
                 {
                     Name="Oliver Kahn",
-                    ImagePath="Image/kahn.jpg",
+                    ImagePath="../../../Image/kahn.jpg",
                     Nationality="Almanya",
                     Price="2700000000$",
                     Date=new DateTime(1969,07,15),
@@ -69,7 +69,7 @@ namespace WPFGalery
                 new Images
                 {
                     Name="Pele",
-                    ImagePath="Image/pele.jpg",
+                    ImagePath="../../../Image/pele.jpg",
                     Nationality="Brazil",
                     Price="3500000000$",
                     Date=new DateTime(1940,05,25),
@@ -78,7 +78,7 @@ namespace WPFGalery
                 new Images
                 {
                     Name="Johan Cruyff",
-                    ImagePath="Image/cruyff.jpg",
+                    ImagePath="../../../Image/cruyff.jpg",
                     Nationality="Holland",
                     Price="1900000000$",
                     Date=new DateTime(1947,09,25),
@@ -87,7 +87,7 @@ namespace WPFGalery
                 new Images
                 {
                     Name="Carles Puyol",
-                    ImagePath="Image/puyol.jpg",
+                    ImagePath="../../../Image/puyol.jpg",
                     Nationality="Spain",
                     Price="3800000000$",
                     Date=new DateTime(1978,11,14),
@@ -131,6 +131,7 @@ namespace WPFGalery
 
         private void ListBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
+
             if (ListBox.SelectedItem is Images item)
             {
                 SecondPage secondPage = new SecondPage();
@@ -146,6 +147,9 @@ namespace WPFGalery
                 secondPage.ShowDialog();
 
             }
+
+
+           
         }
     }
 }

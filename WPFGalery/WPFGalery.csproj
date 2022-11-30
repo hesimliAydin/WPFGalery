@@ -8,11 +8,30 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="ball.png" />
+    <None Remove="cruyff.jpg" />
     <None Remove="Gallery.jpg" />
+    <None Remove="icons8-ball-32.png" />
+    <None Remove="kahn.jpg" />
+    <None Remove="maradona.jpg" />
+    <None Remove="messi.jpg" />
+    <None Remove="neymar.jpg" />
+    <None Remove="pele.jpg" />
+    <None Remove="puyol.jpg" />
+    <None Remove="ronaldo.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Image\cruyff.jpg" />
+    <Resource Include="Image\ball.png" />
     <Resource Include="Image\Gallery.jpg" />
+    <Resource Include="Image\ronaldo.jpg" />
+    <Resource Include="Image\kahn.jpg" />
+    <Resource Include="Image\maradona.jpg" />
+    <Resource Include="Image\messi.jpg" />
+    <Resource Include="Image\neymar.jpg" />
+    <Resource Include="Image\pele.jpg" />
+    <Resource Include="Image\puyol.jpg" />
   </ItemGroup>
 
 </Project>

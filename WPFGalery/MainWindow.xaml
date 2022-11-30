@@ -127,7 +127,12 @@
                                                     Text="{Binding Price}"
                                                     FontSize="14"
                                                     Foreground="Black"  
-                                                    FontWeight="Bold" Width="180" Height="20" Margin="5,3,0,0" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                                                    FontWeight="Bold"
+                                                    Width="180"
+                                                    Height="20"
+                                                    Margin="5,3,0,0"
+                                                    HorizontalAlignment="Left"
+                                                    VerticalAlignment="Bottom"/>
                                     </StackPanel>
                                     <WrapPanel Grid.Row="1">
                                         
